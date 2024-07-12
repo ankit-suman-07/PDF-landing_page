@@ -57,7 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // Append featuresTop and featuresBottom to the child div
         childDiv.appendChild(featuresTop);
         childDiv.appendChild(featuresBottom);
-        
+
+        // Add click event listener to redirect to demo.html
+        childDiv.addEventListener('click', () => {
+            window.location.href = 'demo.html';
+        });
+
 
         // Append the child div to the parent div
         featuresDiv.appendChild(childDiv);
